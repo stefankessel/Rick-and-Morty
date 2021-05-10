@@ -3,32 +3,30 @@ import Layout from '../components/Layout'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
-import { useRouter } from 'next/router'
 import * as localForage from 'localforage'
  
 
 export default function Character({characters}){
 
-    const setLikeFromLocalForage = async() => await localForage.getItem('like')
-    // console.log(setLikeFromLocalForage())
 
     const [fav, setFav] = useState(null)
-    // console.log(fav)
-    localForage.getItem('like').then( res => 
-        setFav(res)
-        )
+
+    localForage.getItem(characters.name).then( res => {
+        setFav(res)      
+    })
+    
 
     const likeHandler = async() => {
         if(fav){
-            await localForage.removeItem('like')
+            await localForage.removeItem(characters.name)
             setFav(null)
         }
         else{
-            await localForage.setItem('like', 'fav')
-            setFav('fav')
+            await localForage.setItem(characters.name, characters.name)
+            setFav(characters.name)
         }
     }
-
+    
     const getFavImg = fav ? '/img/heart_red.svg' : '/img/heart.svg'
 
     return(
