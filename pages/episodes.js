@@ -14,7 +14,7 @@ export default function Episodes({episodes}){
 
     return(
         <Layout>
-            <h1>Episodes</h1>
+            <h1 className='font-bold p-2 text-xl'>Episodes</h1>
             <div className='grid'>
                 {profiles}
             </div>

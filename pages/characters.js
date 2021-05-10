@@ -16,7 +16,7 @@ export default function Characters({characters}){
 
     return(
         <Layout>
-            <h1>Characters</h1>
+            <h1 className='font-bold p-2 text-xl'>Characters</h1>
             <div className='grid'>
                 {profiles}
             </div>

@@ -12,7 +12,7 @@ export default function Character({characters}){
     const setLikeFromLocalForage = async() => await localForage.getItem('like')
     // console.log(setLikeFromLocalForage())
 
-    const [fav, setFav] = useState()
+    const [fav, setFav] = useState(null)
     // console.log(fav)
     localForage.getItem('like').then( res => 
         setFav(res)
@@ -44,7 +44,7 @@ export default function Character({characters}){
                         <>
                         <div className='flex justify-between my-4 pt-4'>
                             <div className='mr-4'>
-                                <h1 className='font-bold '>{characters.name}</h1>
+                                <h1 className='font-bold text-xl font-semibold'>{characters.name}</h1>
                                 <Image src={characters.image} width={300} height={300} alt={characters.name}/>
                                 <Image src={getFavImg} width={50} height={50} alt='like' onClick={likeHandler}/>
                             </div>

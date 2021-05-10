@@ -22,7 +22,7 @@ export default function Character({episode}){
             </Link>
                 
             {episode &&(
-                            <><h1 className='my-4 font-bold'>{episode.name}</h1>
+                            <><h1 className='my-4 font-bold text-xl'>{episode.name}</h1>
                             <div>
                                 <ul>
                                     {episode.characters.map( (c,i) => (
