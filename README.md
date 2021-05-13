@@ -1,34 +1,51 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Coding-Challenge Frontend
 
-## Getting Started
 
-First, run the development server:
+## Task
+Build a website for exploring the [Rick and Morty API](https://rickandmortyapi.com/documentation)  and present it to our team. We encourage you to use the [GraphQL API](https://rickandmortyapi.com/graphql), but if you have big struggles using GraphQL you can fall back to the [REST-API](https://rickandmortyapi.com/documentation/#rest).
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+The website should include:
+ - A **Character-Overview** of all characters
+	 -  (with links to Character-Details)
+ - An **Episode-Overview** of all episodes
+	 -  (with links to Episode-Details)
+ - A **Character-Details-Page** for each character
+	 - Overview of all episodes with this character
+	 - (with links to Episode-Details)
+ - An **Episode-Details-Page** for each episode
+	 - Overview of all characters in this episode
+	 - (with links to Character-Details)
+ - **Mark a character as favorite**
+	 - Favorite characters should display a ❤️ in every view
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+You should plan to invest about **6 hours** to complete the challenge.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Presentation
+Prepare a short (10-15 min) presentation to our developer-team:
+- Brief introduction of yourself
+- Explain your approach and your decision
+- Show us your prototype and some code
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+Afterwards our team will ask you some questions about your project.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Optional Tasks
+(Only recommended for senior developers) You could try to add one ore more of the following features to further improve your website:
+- Typescript
+- Server-Side-Rendering
+- End-2-End-Tests
+- Login / Auth
+- Persist favorites (locally)
+- Public deployment / hosting
+- Public Git-Repository with commits showing your progression
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Technology
+We can recommend the following libraries, but you are free to use whatever technologies, libraries and frameworks you want to use. Either way, please explain your technology-decisions in the presentation.
+- [React](https://reactjs.org/)
+- [Styled Components](https://styled-components.com/) or [Tailwind](https://tailwindcss.com/) for CSS/Styling
+- [Apollo Client](https://www.apollographql.com/docs/react/) or [react-query](https://github.com/tannerlinsley/react-query) for fetching data from a GraphQL-API
+- [LocalForage](https://github.com/localForage/localForage) for saving state locally
+- [Next.js](https://nextjs.org/) for Server-Side-Rendering
+- [Create React App](https://create-react-app.dev/) when not using Server-Side-Rendering
+- [Cypress](https://www.cypress.io/) for e2e-Testing
+- [Auth0](https://auth0.com/) or [Magic](https://magic.link/) or [NextAuth](https://next-auth.js.org/) for auth
+- [Netlify](https://www.netlify.com/) or [Vercel](https://vercel.com/) for hosting
