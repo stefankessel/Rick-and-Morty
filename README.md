@@ -1,6 +1,6 @@
 # Coding-Challenge Frontend
 
-# quick and dirty
+quick and dirty
 
 ## Task
 Build a website for exploring the [Rick and Morty API](https://rickandmortyapi.com/documentation)  and present it to our team. We encourage you to use the [GraphQL API](https://rickandmortyapi.com/graphql), but if you have big struggles using GraphQL you can fall back to the [REST-API](https://rickandmortyapi.com/documentation/#rest).
